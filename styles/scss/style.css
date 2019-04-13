@@ -1,0 +1,65 @@
+@font-face {
+  font-family: Westcraft;
+  src: url(../../fonts/WestcraftSans-Soft.otf); }
+.my-card-img {
+  background-color: coral; }
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap; }
+  .footer-section .footer-main-section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 2em;
+    width: 100%;
+    height: 100%; }
+    .footer-section .footer-main-section div {
+      padding-left: 1em;
+      padding-right: 1em;
+      height: 100%; }
+      .footer-section .footer-main-section div .footer-heading {
+        font-family: Westcraft; }
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem; }
+
+.navbar-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem; }
+  .navbar-section a {
+    color: #666; }
+    .navbar-section a:hover {
+      color: #666;
+      opacity: 0.9;
+      text-decoration: none; }
+  .navbar-section .nav-item {
+    margin-left: 3em;
+    cursor: pointer;
+    font-family: Westcraft;
+    font-size: 120%; }
+    .navbar-section .nav-item:first-of-type {
+      margin: 0;
+      margin-left: 0;
+      height: 100%; }
+    .navbar-section .nav-item:hover {
+      opacity: 0.8; }
+
+.bobs-heading-font {
+  font-family: Westcraft; }
+
+/*# sourceMappingURL=style.css.map */

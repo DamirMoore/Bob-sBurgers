@@ -6,12 +6,367 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Bob's Burgers</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <script src='main.js'></script>
+  <link rel='stylesheet' type='text/css' media='screen' href='styles/scss/style.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='styles/css/uikit.css'>
+  <script src='js/uikit.min.js'></script>
+  <script src='js/uikit-icons.min.js'></script>
+  <script src='js/main.js'></script>
 </head>
 
 <body>
-  <h1>Bob's Burgers</h1>
+  <!-- Navbar -->
+  <section>
+    <div class="logo-section">
+      <div style="width: 200px; height: 200px;">
+        <img data-src="images/logo.png" alt="Bob's Burgers Logo" width="100%" height="100%" uk-img />
+      </div>
+    </div>
+
+    <div class="navbar-section">
+      <p class="nav-item"><a href="#"></a>Home</a></p>
+      <p class="nav-item"><a href="#menu" uk-scroll>Menu</a></p>
+      <p class="nav-item"><a href="#map" uk-scroll>Location</a></p>
+      <p class="nav-item"><a href="#about-us" uk-scroll>About Us</a></p>
+      <p class="nav-item"><a href="#footer" uk-scroll>Contact</a></p>
+    </div>
+
+    <!-- <div class="uk-position-relative ">
+
+      <nav class="uk-navbar-container uk-background-white" uk-navbar="dropbar: true">
+
+        <div class="uk-navbar-center"> -->
+    <!-- <a class="uk-navbar-item uk-logo uk-text-white uk-margin-right" href="#">Bob's Burgers</a> -->
+    <!-- <ul class="uk-navbar-nav">
+            <li>
+              <a href="index.html" class="uk-text-smokey-black uk-main-nav-item">Home</a>
+            </li>
+            <li>
+              <a href="menu.html" class="uk-text-smokey-black uk-main-nav-item">Menu</a>
+            </li>
+            <li>
+              <a href="location.html" class="uk-text-smokey-black uk-main-nav-item">Location</a>
+            </li>
+            <li>
+              <a href="about.html" class="uk-text-smokey-black uk-main-nav-item">About Us</a>
+            </li>
+            <li>
+              <a href="contact.html" class="uk-text-smokey-black uk-main-nav-item">Contact</a>
+            </li>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li> -->
+    <!-- <button class="uk-button uk-button-default uk-margin-small-right" type="button"
+      uk-toggle="target: #offcanvas-nav-primary">Primary Nav</button> -->
+    <!-- <a class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle href="#offcanvas-nav-primary"></a>
+            </li>
+          </ul>
+        </div> -->
+
+    <!-- <div class="uk-navbar-right">
+
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="#">Parent</a>
+              <div class="uk-navbar-dropdown">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-active"><a href="#">Active</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li class="uk-nav-header">Header</li>
+                  <li><a href="#">Item</a></li>
+                  <li><a href="#">Item</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a href="#">Item</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+        </div> -->
+    <!-- </nav>
+
+      <div class="uk-navbar-dropbar"></div>
+
+    </div> -->
+  </section>
+
+  <!-- Grunge Divider: Top -->
+  <section style="background-color: none; position: relative; top: 4.5rem; z-index: 1; margin-top: -5rem;">
+    <img src="images/grunge-divider-top-white2.png" alt="grunge divider">
+  </section>
+
+  <!-- Jumbotron -->
+  <section class="uk-cover-container uk-height-large">
+    <img data-src="images/beef-burger.jpg" alt="image" uk-img uk-cover>
+    <!-- <h1>Jumbotron</h1>
+    <p>Image of Food</p> -->
+  </section>
+
+  <!-- Grunge Divider: bottom -->
+  <section style="background-color: none; position: relative; bottom: 4.5rem; z-index: 1; margin-bottom: -4.5rem;">
+    <img src="images/grunge-divider-bottom-white4.png" alt="grunge divider">
+  </section>
+
+  <!-- About Us -->
+  <section class="aboutus-section uk-margin-medium-top">
+    <div id="about-us">
+      <h1 class="bobs-heading-font" style="margin-left: 1em;">About Us</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia pariatur nihil quasi dolor, aliquid quia quas
+        explicabo est, sit, amet eligendi fugit. Reprehenderit provident voluptates facilis doloribus fugiat aspernatur
+        libero.
+      </p>
+    </div>
+
+
+    <div class='uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin' uk-grid>
+      <div>
+        <div class='uk-card-body'>
+          <h3 class='uk-card-title bobs-heading-font'>Great Food</h3>
+          <div>
+            <p>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel praesentium soluta minus incidunt earum quia
+              cum, cupiditate iure debitis doloribus voluptatum rem ullam dignissimos unde rerum, ex, at mollitia!
+              Quaerat!"
+            </p>
+            <p style="color: "></p>--Emily, Yelp Review</p>
+          </div>
+        </div>
+      </div>
+      <div class='uk-card-media-right uk-cover-container'>
+        <!-- <img src=' alt=' uk-cover> -->
+        <p class='my-card-img' style='background-color: coral;' uk-cover></p>
+        <canvas style='background-color: coral;' width='600' height='400'></canvas>
+      </div>
+    </div>
+
+    <div class='uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin' uk-grid>
+      <div class='uk-card-media-left uk-cover-container'>
+        <!-- <img src=' alt=' uk-cover> -->
+        <p class='my-card-img' style='background-color: coral;' uk-cover></p>
+        <canvas style='background-color: coral;' width='600' height='400'></canvas>
+      </div>
+      <div>
+        <div class='uk-card-body'>
+          <h3 class='uk-card-title bobs-heading-font'>Nice Environment</h3>
+          <div>
+            <p>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel praesentium soluta minus incidunt earum quia
+              cum, cupiditate iure debitis doloribus voluptatum rem ullam dignissimos unde rerum, ex, at mollitia!
+              Quaerat!"
+            </p>
+            <p style="color: "></p>--Sarah, Yelp Review</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin' uk-grid>
+      <div>
+        <div class='uk-card-body'>
+          <h3 class='uk-card-title bobs-heading-font'>Spectacular Service</h3>
+          <div>
+            <p>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel praesentium soluta minus incidunt earum quia
+              cum, cupiditate iure debitis doloribus voluptatum rem ullam dignissimos unde rerum, ex, at mollitia!
+              Quaerat!"
+            </p>
+            <p style="color: "></p>--Nathan, Yelp Review</p>
+          </div>
+        </div>
+      </div>
+      <div class='uk-card-media-right uk-cover-container'>
+        <!-- <img src=' alt=' uk-cover> -->
+        <p class='my-card-img' style='background-color: coral;' uk-cover></p>
+        <canvas style='background-color: coral;' width='600' height='400'></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Items -->
+  <section id="menu">
+    <h1 class="bobs-heading-font" style="margin-left: 1em;">Menu</h1>
+    <div uk-filter='target: .js-filter'>
+      <div class='uk-grid-small uk-grid-divider uk-child-width-auto' style="margin-left: 1em;" uk-grid>
+        <div>
+          <ul class='uk-subnav uk-subnav-pill' uk-margin>
+            <li class='uk-active' uk-filter-control><a href='#'>All</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class='uk-subnav uk-subnav-pill' uk-margin>
+            <li uk-filter-control='filter: [data-color*="white"]; group: data-color'><a href='#'>Breakfast</a></li>
+            <li uk-filter-control='filter: [data-color*="blue"]; group: data-color'><a href='#'>Lunch</a></li>
+            <li uk-filter-control='filter: [data-color*="black"]; group: data-color'><a href='#'>Dinner</a></li>
+            <li uk-filter-control='filter: [data-color*="dark"]; group: data-color'><a href='#'>Popular</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class='js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center' uk-grid='masonry: true'>
+        <li data-color='white'>
+          <div class='uk-card uk-card-default uk-card-body'>
+            <!-- <canvas width='600' height='800'></canvas> -->
+            <!-- <div class='uk-position-center'>Item</div> -->
+            <img data-src="images/beef-burger.jpg" width="100%" height="100%" uk-img />
+          </div>
+        </li>
+        <li data-color='blue dark'>
+          <div class='uk-card uk-card-default uk-card-body'>
+            <!-- <canvas width='600' height='400'></canvas>
+            <div class='uk-position-center'>Item</div> -->
+            <img data-src="images/beef-burger.jpg" width="100%" height="100%" uk-img />
+          </div>
+        </li>
+        <li data-color='white'>
+          <div class='uk-card uk-card-default uk-card-body'>
+            <!-- <canvas width='600' height='600'></canvas>
+            <div class='uk-position-center'>Item</div> -->
+            <img data-src="images/beef-burger.jpg" width="100%" height="100%" uk-img />
+          </div>
+        </li>
+        <li data-color='white'>
+          <div class='uk-card uk-card-default uk-card-body'>
+            <!-- <canvas width='600' height='400'></canvas>
+            <div class='uk-position-center'>Item</div> -->
+            <img data-src="images/beef-burger.jpg" width="100%" height="100%" uk-img />
+          </div>
+        </li>
+        <li data-color='black dark'>
+          <div class='uk-card uk-card-default uk-card-body'>
+            <!-- <canvas width='600' height='600'></canvas>
+            <div class='uk-position-center'>Item</div> -->
+            <img data-src="images/beef-burger.jpg" width="100%" height="100%" uk-img />
+          </div>
+        </li>
+        <li data-color='black dark'>
+          <div class='uk-card uk-card-default uk-card-body'>
+            <!-- <canvas width='600' height='400'></canvas>
+            <div class='uk-position-center'>Item</div> -->
+            <img data-src="images/beef-burger.jpg" width="100%" height="100%" uk-img />
+          </div>
+        </li>
+        <li data-color='blue dark'>
+          <div class='uk-card uk-card-default uk-card-body'>
+            <!-- <canvas width='600' height='600'></canvas>
+            <div class='uk-position-center'>Item</div> -->
+            <img data-src="images/beef-burger.jpg" width="100%" height="100%" uk-img />
+          </div>
+        </li>
+        <li data-color='black dark'>
+          <div class='uk-card uk-card-default uk-card-body'>
+            <!-- <canvas width='600' height='800'></canvas>
+            <div class='uk-position-center'>Item</div> -->
+            <img data-src="images/beef-burger.jpg" width="100%" height="100%" uk-img />
+          </div>
+        </li>
+        <li data-color='blue dark'>
+          <div class='uk-card uk-card-default uk-card-body'>
+            <!-- <canvas width='600' height='800'></canvas>
+            <div class='uk-position-center'>Item</div> -->
+            <img data-src="images/beef-burger.jpg" width="100%" height="100%" uk-img />
+          </div>
+        </li>
+        <li data-color='white'>
+          <div class='uk-card uk-card-default uk-card-body'>
+            <!-- <canvas width='600' height='800'></canvas>
+            <div class='uk-position-center'>Item</div> -->
+            <img data-src="images/beef-burger.jpg" width="100%" height="100%" uk-img />
+          </div>
+        </li>
+        <li data-color='blue dark'>
+          <div class='uk-card uk-card-default uk-card-body'>
+            <!-- <canvas width='600' height='600'></canvas>
+            <div class='uk-position-center'>Item</div> -->
+            <img data-src="images/beef-burger.jpg" width="100%" height="100%" uk-img />
+          </div>
+        </li>
+        <li data-color='black dark'>
+          <div class='uk-card uk-card-default uk-card-body'>
+            <!-- <canvas width='600' height='400'></canvas>
+            <div class='uk-position-center'>Item</div> -->
+            <img data-src="images/beef-burger.jpg" width="100%" height="100%" uk-img />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Grunge Divider: Top -->
+  <section style="background-color: none; position: relative; top: 6rem; z-index: 1; margin-top: -4rem;">
+    <img src="images/grunge-divider-top-white2.png" alt="grunge divider">
+  </section>
+
+  <!-- Map of Store Location -->
+  <section class="uk-margin-medium-top">
+    <!-- <h1>Google Map</h1>
+    <p>Location of our resturant</p> -->
+    <div id="map" style="width: 100%; height: 400px;"></div>
+  </section>
+
+  <!-- Grunge Divider: bottom -->
+  <section style="background-color: none; position: relative; bottom: 4.8rem; z-index: 1; margin-bottom: -4.5rem;">
+    <img src="images/grunge-divider-bottom-white4.png" alt="grunge divider">
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="footer-section">
+    <div class="footer-main-section">
+      <!-- Open Hours -->
+      <div>
+        <h3 class="footer-heading">Open Hours</h3>
+        <p>Mon-Fri: 9am-5pm</p>
+        <p>Sat: 9am-1pm</p>
+        <p>Sun: Closed</p>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div>
+        <h3 class="footer-heading">Social Media</h3>
+        <a href="#facebook"><span uk-icon="facebook"></span></a>
+        <a href="#instagram"><span uk-icon="instagram"></span></a>
+        <a href="#pinterest"><span uk-icon="pinterest"></span></a>
+        <a href="#twitter"><span uk-icon="twitter"></span></a>
+        <a href="#yelp"><span uk-icon="yelp"></span></a>
+        <a href="#tripadvisor"><span uk-icon="tripadvisor"></span></a>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="footer-heading">Contact Us</h3>
+        <p>bob@bobsburgers.com</p>
+        <p>Phone: (816)343-2343</p>
+        <p>198 West 21th Street, Suite 721, Blue Springs 10010</p>
+      </div>
+    </div>
+
+    <!-- Copywrite -->
+    <p style="font-weight: 500;">&#169; Bob's Burgers, 2019</p>
+  </footer>
+
+  <script>
+    // Initialize and add the map.
+    function initMap() {
+      // The location of Uluru
+      var uluru = { lat: -25.344, lng: 131.036 };
+      var blueSprings = { lat: -25.344, lng: 131.036 };
+
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+        document.querySelector('#map'), { zoom: 4, center: uluru }
+      );
+
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({ position: uluru, map: map });
+    }
+  </script>
+
+  <!-- // Load API
+  // AIzaSyCgVqkUdRCc5YTZKy9D3LzcyUMCSIsSPBk -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgVqkUdRCc5YTZKy9D3LzcyUMCSIsSPBk&callback=initMap">
+    </script>
+
 
 </body>
 

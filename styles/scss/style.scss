@@ -1,0 +1,104 @@
+@import '_vars.scss';
+@font-face {
+  font-family: Westcraft;
+  src: url(../../fonts/WestcraftSans-Soft.otf);
+} 
+
+.my-card-img {
+  background-color: coral;
+}
+
+.footer-section {
+  // background-color: $gray-100;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .footer-main-section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // background-color: $mint-green;
+    padding-top: 2em;
+    width: 100%;
+    height: 100%; 
+
+    div {
+      padding-left: 1em;
+      padding-right: 1em;
+      height: 100%;
+      // width: 30%;
+      // background-color: coral;
+
+      // display: flex;
+      // justify-content: center;
+      // flex-direction: column;
+      // align-items: center;
+      // flex-wrap: wrap;
+
+      .footer-heading {
+        // color: coral;
+        font-family: Westcraft;
+      }
+    }
+  }
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  // background-color: $mint-green;
+}
+
+.navbar-section {
+display: flex;
+justify-content: center;
+flex-direction: row;
+align-items: center;
+flex-wrap: wrap;
+// background-color: $gray-200;
+margin-bottom: 1rem;
+margin-top: 0.5rem;
+
+a {
+  // color: $gray-900;
+  color: $dark-gray;
+
+  &:hover {
+    color: $dark-gray;
+    opacity: 0.9;
+    text-decoration: none;
+  }
+}
+  
+  .nav-item {
+    margin-left: 3em; 
+    // font-weight: 500; 
+    cursor: pointer;
+    font-family: Westcraft;
+    font-size: 120%;
+
+    &:first-of-type {
+      // color: coral;
+      margin: 0;
+      margin-left: 0;
+      height: 100%;
+      // background-color: $berry-purple;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.bobs-heading-font {
+  font-family: Westcraft;
+}
